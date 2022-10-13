@@ -10,7 +10,11 @@ export const Board = styled.div<BoardProps>`
     grid-template-rows: repeat(${(props) => props.boardSize}, 1fr);
     grid-template-columns: repeat(${(props) => props.boardSize}, 1fr);
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         width: 80vw
+    }
+
+    @media (max-width: 800px) {
+        width: 60vw
     }
 `
